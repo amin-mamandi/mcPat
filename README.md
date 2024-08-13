@@ -1,11 +1,10 @@
-# mcPat
-
-Basically, I have modified the "template.xml" file to parse the stats data for four cores. This is totally a hacky way. There should be another way to do that. 
-
-I will update it once I figure it out. 
-
-BTW, How to use it?
+# mcpat-gem5
+git repo for porting gem5 output to mcpat. The code is based on this repo [https://github.com/TAKAKEYA/gem5tomcpat.git](https://github.com/TAKAKEYA/gem5tomcpat.git) 
 
 ```
-python2 pars.py ../m5out/stats.txt ../m5out/config.json template-o3.xml -o ./mcpat-out
+# Where to store the "mcpat-out-0.xml" file 
+mkdir mcpat_output
+
+# Works with python 2.7
+python pars.py PATH_TO/m5out/stats.txt PATH_TO/m5out/config.json template-o3.xml -o mcpat_output
 ```
